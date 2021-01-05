@@ -1,0 +1,34 @@
+<div class="main-container">
+  <mat-toolbar class="topbar telative" color="primary">
+    <button (click)="snav.toggle()" mat-icon-button value="sidebarclosed" class="menu">
+      <mat-icon >menu</mat-icon>
+    </button>
+    <div class="navbar-header">
+      <a class="navbar-brand" href="../../../../index.html">
+        <b>
+          <img alt="homepage" class="light-logo logo" src="../../../../assets/images/contacts_48dp.png">
+        </b>
+        <span fxShow="false" class="hisc" fxShow.gt-xs>
+             Contactos
+        </span> </a>
+    </div>
+    <span fxFlex></span>
+    <app-header></app-header>
+  </mat-toolbar>
+  <mat-sidenav-container [style.marginTop.px]="mobileQuery.matches ? 0 : 0" class="example-sidenav-container">
+    <mat-sidenav #snav [disableClose]="mobileQuery.matches" [mode]="mobileQuery.matches ? 'side' : 'over'"
+                 [opened]="mobileQuery.matches"
+                 class="dark-sidebar pl-xs" fixedTopGap="0" id="snav">
+      <app-sidebar></app-sidebar>
+    </mat-sidenav>
+    <mat-sidenav-content class="page-wrapper">
+
+      <div class="page-content">
+        <router-outlet>
+        </router-outlet>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
+
+

@@ -1,0 +1,105 @@
+@import 'variable';
+@import 'header';
+@import 'sidebar';
+@import 'pages';
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.contenedor {
+  width: 95%;
+  margin: auto;
+  max-width: 1400px;
+}
+
+.main-panel {
+  width: 98%;
+  margin: 10px auto;
+  position: relative;
+  background-color: white;
+  border-radius: 15px !important;
+
+  mat-card-title {
+    margin: 0 !important;
+  }
+}
+
+.containeru {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 10px;
+  width: 98%;
+  margin: auto;
+
+  .card {
+    cursor: pointer !important;
+    margin: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: -2px 2px 11px 6px rgba(209, 209, 235, 0.59);
+    -moz-box-shadow: -2px 2px 11px 6px rgba(209, 209, 235, 0.59);
+    box-shadow: -2px 2px 11px 6px rgba(209, 209, 235, 0.59);
+    min-width: 200px;
+    max-width: 20%;
+
+    .card-body {
+      padding: 20px;
+      font-weight: bold;
+      font-size: 25px;
+      color: #5F6368;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .toolCard {
+      height: 30px;
+      background-color: #26C6DA;
+      color: white;
+      font-weight: bold;
+      font-size: 15px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      text-align: center;
+      padding: 10px;
+    }
+  }
+}
+
+.fill-remaining-space {
+  flex: 1 1 auto;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.mat-elevation-z8, table {
+  width: 100%;
+}
+
+.inicial {
+  width: 45px;
+  height: 45px;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
