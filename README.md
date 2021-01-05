@@ -33,11 +33,11 @@ REQUERIMIENTIS
 ```
 1: Generara la imagen del software
 ```
-$ docker build -t contactoApp:latest .
+$ docker build -t contacto_app:latest .
 ```
 2: Levantar el contenedor con su respectivo puerto de entrada y salida
 ```
-$ docker run -d -p 8080:80 contactoApp:latest
+$ docker run -d -p 8080:80 contacto_app:latest
 ```
 # ELEININAR EL PROBLEMA DEL LIMITE DE ARCHIVOS VSCODE SISTEMAS UNIX
 
